@@ -1,0 +1,195 @@
+object Form1: TForm1
+  Left = 585
+  Top = 186
+  Width = 700
+  Height = 588
+  AlphaBlendValue = 230
+  Caption = #1040#1087#1088#1086#1082#1089#1080#1084#1072#1094#1080#1103' '#1092#1091#1085#1082#1094#1080#1080' '#1087#1086#1083#1080#1085#1086#1084#1086#1084' '
+  Color = clBtnFace
+  Constraints.MinHeight = 520
+  Constraints.MinWidth = 660
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  OnClose = FormClose
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 8
+    Top = 267
+    Width = 832
+    Height = 1391
+  end
+  object Bevel2: TBevel
+    Left = 4
+    Top = 130
+    Width = 723
+    Height = 9
+    Shape = bsTopLine
+  end
+  object Bevel4: TBevel
+    Left = 3
+    Top = 254
+    Width = 723
+    Height = 9
+    Shape = bsTopLine
+  end
+  object Button1: TButton
+    Left = 114
+    Top = 149
+    Width = 69
+    Height = 24
+    Hint = #1040#1087#1088#1086#1082#1089#1080#1084#1072#1094#1080#1103' '#1074#1074#1077#1076#1077#1085#1085#1099#1093' '#1076#1072#1085#1085#1099#1093' '#1087#1086#1083#1080#1085#1086#1084#1086#1084
+    Caption = #1056#1072#1089#1095#1077#1090
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object LabeledEdit1: TLabeledEdit
+    Left = 8
+    Top = 148
+    Width = 69
+    Height = 32
+    Hint = #1057#1090#1077#1087#1077#1085#1100' '#1072#1087#1088#1086#1082#1089#1080#1084#1080#1088#1091#1102#1097#1077#1075#1086' '#1087#1086#1083#1080#1085#1086#1084#1072
+    EditLabel.Width = 3
+    EditLabel.Height = 10
+    EditLabel.Caption = ' '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    LabelPosition = lpAbove
+    LabelSpacing = 3
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+    Text = '2'
+    OnChange = LabeledEdit1Change
+    OnKeyPress = LabeledEdit2KeyPress
+  end
+  object LabeledEdit2: TLabeledEdit
+    Left = 8
+    Top = 8
+    Width = 69
+    Height = 32
+    Hint = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1090#1086#1095#1077#1082' '#1076#1072#1085#1085#1099#1093
+    EditLabel.Width = 3
+    EditLabel.Height = 11
+    EditLabel.Caption = ' '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    LabelPosition = lpAbove
+    LabelSpacing = 3
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    Text = '2'
+    OnChange = LabeledEdit2Change
+    OnKeyPress = LabeledEdit2KeyPress
+  end
+  object SG_data: TStringGrid
+    Left = 8
+    Top = 41
+    Width = 91
+    Height = 63
+    BorderStyle = bsNone
+    ColCount = 2
+    DefaultColWidth = 55
+    DefaultRowHeight = 25
+    RowCount = 3
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goAlwaysShowEditor]
+    ScrollBars = ssHorizontal
+    TabOrder = 1
+    OnKeyPress = SG_dataKeyPress
+    OnKeyUp = SG_dataKeyUp
+    OnSelectCell = SG_dataSelectCell
+  end
+  object SG_koef: TStringGrid
+    Left = 8
+    Top = 179
+    Width = 46
+    Height = 42
+    BorderStyle = bsNone
+    ColCount = 1
+    DefaultColWidth = 55
+    DefaultRowHeight = 25
+    FixedCols = 0
+    RowCount = 2
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goAlwaysShowEditor]
+    ScrollBars = ssHorizontal
+    TabOrder = 8
+    OnKeyPress = SG_koefKeyPress
+    OnSelectCell = SG_koefSelectCell
+  end
+  object Button2: TButton
+    Left = 114
+    Top = 8
+    Width = 69
+    Height = 25
+    Hint = #1047#1072#1075#1088#1091#1079#1080#1090#1100' '#1076#1072#1085#1085#1099#1077' '#1080#1079' '#1092#1072#1081#1083#1072
+    Caption = #1047#1072#1075#1088#1091#1079#1080#1090#1100
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 5
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 195
+    Top = 8
+    Width = 69
+    Height = 25
+    Hint = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1076#1072#1085#1085#1099#1077' '#1074' '#1092#1072#1081#1083
+    Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 382
+    Top = 8
+    Width = 33
+    Height = 25
+    Caption = '?'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clGreen
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+    OnClick = Button4Click
+  end
+  object ButtonDelColl: TButton
+    Left = 305
+    Top = 8
+    Width = 69
+    Height = 25
+    Caption = #1059#1076#1072#1083#1080#1090#1100
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 6
+    OnClick = ButtonDelCollClick
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 877
+    Top = 6
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 883
+    Top = 46
+  end
+end
